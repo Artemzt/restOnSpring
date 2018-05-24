@@ -1,0 +1,21 @@
+CREATE DATABASE ukrTeams;
+USE restapi;
+CREATE TABLE teams (
+  id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  teamName VARCHAR(500) NOT NULL,
+  teamCity VARCHAR(5000) NOT NULL,
+  foundationYear INT(6) NOT NULL);
+
+  art;
+  Password1;
+
+  select host, user, password from mysql.user;
+
+  select * from premier_league;
+
+  http://localhost:8080/upl_clubs/allPlTeams;
+
+  [{"id":1,"teamName":"Shakhtar","teamCity":"Donetsk","foundationYear":1936},
+  {"id":2,"teamName":"Dynamo","teamCity":"Kiev","foundationYear":1927},
+  {"id":4,"teamName":"Zoria","teamCity":"Luhansk","foundationYear":1923},
+  {"id":5,"teamName":"Olympic","teamCity":"Donetsk","foundationYear":2001}]

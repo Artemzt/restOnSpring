@@ -1,4 +1,9 @@
-hello\Application.class
+hello\ffu\teams\uplTeams\OlympicDonetsk.class
+hello\ffu\teams\uplTeams\ShakhtarDonetsk.class
+hello\ffu\teams\uplTeams\DynamoKiev.class
 hello\ffu\PremierLeague.class
-hello\Greeting.class
-hello\GreetingController.class
+hello\ffu\teams\uplTeams\ZoriaLuhansk.class
+hello\ffu\TeamsRepository.class
+hello\Application.class
+hello\UPLController.class
+hello\ffu\teams\uplTeams\BasicTeam.class

@@ -15,15 +15,33 @@
         <relativePath/>
         <!-- lookup parent from repository -->
     </parent>
+    <profiles>
+        <profile>
+            <id>development</id>
+            <properties>
+                <spring.profiles.active>development</spring.profiles.active>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
 
     <build>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <fork>true</fork>
-                    <mainClass>${start-class}</mainClass>
+                    <mainClass>hello.Application</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -33,6 +51,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>2.2-beta-5</version>
@@ -81,10 +100,10 @@
         </dependency>
 
         <!-- JPA Data (We are going to use Repositories, Entities, Hibernate, etc...) -->
-<!--        <dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>-->
+        </dependency>
     </dependencies>
 
 
